@@ -66,10 +66,10 @@ $margin-720: 720px;
 
 // Typography
 //
-$font-family-sans-serif: "Circe", helvetica, arial, sans-serif !default;
-$font-family-medium: "Circe Medium";
-$font-family-narrow: "Circe Narrow";
-$font-family-text: "Circe", sans-serif;
+$font-family-sans-serif: "CirceSlabWebB", helvetica, arial, sans-serif !default;
+$font-family-medium: "CirceSlabWebAMedium";
+$font-family-narrow: "CirceSlabWebANarrow";
+$font-family-text: "CirceSlabWebANarrow", serif;
 
 $font-size-root: 16px;
 $font-size-root-unitless: 14; // Do the (rem) math with the scale

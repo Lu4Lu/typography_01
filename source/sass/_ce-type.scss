@@ -1,27 +1,39 @@
-// Oswald Regular
+// Circe Regular
 @font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe_Slab_B.woff2") format("woff2"),
-    url("../fonts/Circe_Slab_B.woff") format("woff");
-  font-weight: 500;
+  font-family: "CirceSlabWebB";
+  src: url("Circe%20Slab_B.eot");
+  src: url("Circe%20Slab_B.eot?#iefix") format("embedded-opentype"),
+    url("Circe%20Slab_B.woff2") format("woff2"),
+    url("Circe%20Slab_B.woff") format("woff"),
+    url("Circe%20Slab_B.ttf") format("truetype"),
+    url("Circe%20Slab_B.svg#CirceSlabBWeb-Regular") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
 // Circe Medium
 @font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe_Slab_A_Medium.woff2") format("woff2"),
-    url("../fonts/Circe_Slab_A_Medium.woff") format("woff");
-  font-weight: 500;
+  font-family: "CirceSlabWebAMedium";
+  src: url("Circe%20Slab_A%20Medium.eot");
+  src: url("Circe%20Slab_A%20Medium.eot?#iefix") format("embedded-opentype"),
+    url("Circe%20Slab_A%20Medium.woff2") format("woff2"),
+    url("Circe%20Slab_A%20Medium.woff") format("woff"),
+    url("Circe%20Slab_A%20Medium.ttf") format("truetype"),
+    url("Circe%20Slab_A%20Medium.svg#CirceSlabAWeb-Medium") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
 // Circe Narrow
 @font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe_Slab_B_Narrow.woff2") format("woff2"),
-    url("../fonts/Circe_Slab_B_Narrow.woff") format("woff");
-  font-weight: 300;
+  font-family: "CirceSlabWebANarrow";
+  src: url("Circe%20Slab_A%20Narrow.eot");
+  src: url("Circe%20Slab_A%20Narrow.eot?#iefix") format("embedded-opentype"),
+    url("Circe%20Slab_A%20Narrow.woff2") format("woff2"),
+    url("Circe%20Slab_A%20Narrow.woff") format("woff"),
+    url("Circe%20Slab_A%20Narrow.ttf") format("truetype"),
+    url("Circe%20Slab_A%20Narrow.svg#CirceSlabAWebNarrow-Regular") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
