@@ -1,0 +1,111 @@
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input,
+label,
+textarea {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  font-size: $font-size-16px;
+}
+
+input {
+  color: $ce-text-black-lighter;
+  border: $input-btn-border-width solid $ce-gray-dark;
+}
+
+label {
+  margin-right: $margin-10;
+  color: $ce-text-black-lightest;
+}
+
+legend {
+  font-family: $font-family-sans-serif;
+  text-transform: none;
+  font-size: $font-size-h2;
+  text-align: left;
+}
+
+textarea {
+  min-height: 150px;
+  color: $ce-text-black-lighter;
+}
+
+input,
+textarea {
+  padding: $input-padding;
+  border: $input-btn-border-width solid $ce-gray-dark;
+}
+
+.extra-input {
+  display: none;
+}
+
+.extra-checkbox {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  line-height: $checkbox-size;
+
+  &--large span::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-right: $margin-15;
+    height: $checkbox-size;
+    width: $checkbox-size;
+    outline: solid 1px $ce-gray-dark;
+  }
+  & input:checked + span::before {
+    background-image: url("img/icon-tick.svg");
+  }
+}
+
+.program-input {
+  display: none;
+}
+
+.program-radio {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  line-height: $checkbox-size;
+  cursor: pointer;
+
+  &--large span::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-right: $margin-15;
+    height: $checkbox-size;
+    width: $checkbox-size;
+    border: solid 1px $ce-gray-dark;
+    border-radius: 50%;
+  }
+
+  & input:checked + span::before {
+    background-image: url("img/icon-circle.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-radio--large span::before {
+    margin-right: $margin-20;
+    height: 40px;
+    width: 40px;
+    vertical-align: bottom;
+  }
+
+  .extra-checkbox--large span::before {
+    margin-right: $margin-20;
+    height: 40px;
+    width: 40px;
+  }
+
+  input,
+  textarea {
+    padding: $margin-20;
+  }
+}

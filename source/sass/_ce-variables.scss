@@ -1,0 +1,112 @@
+// Custom Variables
+
+// Table of Contents
+//
+// Colors
+// Options
+// Custom scale
+// Typography
+// Forms
+// Spacing
+// Grid columns
+// Components general
+// Navbar
+// Forms
+// Cards
+
+// Colors
+//
+$ce-white: #ffffff;
+
+$ce-gray: #f1f1f1;
+$ce-gray-lighter: #f2f2f2;
+$ce-gray-dark: #cdcdcd;
+$ce-gray-cat-background: #eaeaea;
+
+$ce-btn-green: #68b738;
+
+$ce-text-black: #111111;
+$ce-text-black-lightest: #222222;
+$ce-text-black-lighter: #444444;
+
+// Margins
+//
+$margin-5: 5px;
+$margin-10: 10px;
+$margin-15: 15px;
+$margin-20: 20px;
+$margin-25: 25px;
+$margin-30: 30px;
+$margin-35: 35px;
+$margin-40: 40px;
+$margin-45: 45px;
+$margin-50: 50px;
+$margin-55: 55px;
+$margin-60: 60px;
+$margin-65: 65px;
+$margin-70: 70px;
+$margin-75: 75px;
+$margin-80: 80px;
+$margin-85: 85px;
+$margin-90: 90px;
+$margin-100: 100px;
+$margin-105: 105px;
+$margin-110: 110px;
+$margin-120: 120px;
+$margin-140: 140px;
+$margin-145: 145px;
+$margin-155: 155px;
+$margin-165: 165px;
+$margin-170: 170px;
+$margin-200: 200px;
+$margin-275: 275px;
+$margin-315: 315px;
+$margin-445: 445px;
+$margin-720: 720px;
+
+// Typography
+//
+$font-family-sans-serif: "Circe", helvetica, arial, sans-serif !default;
+$font-family-medium: "Circe Medium";
+$font-family-narrow: "Circe Narrow";
+$font-family-text: "Circe", sans-serif;
+
+$font-size-root: 16px;
+$font-size-root-unitless: 14; // Do the (rem) math with the scale
+
+$font-size-h1: 36px;
+$font-size-h2: 24px;
+$font-size-h3: $font-size-root;
+$font-size-16px: 16px;
+$font-size-12px: 12px;
+
+$font-size-b: $font-size-16px;
+$button-text: $font-size-16px;
+
+$line-height: 1.35;
+
+// temporal text sizes
+$tablet-h1: 60px;
+// $font-size-h2: 24px;
+// $font-size-h3: $font-size-root;
+$font-size-18px: 18px;
+$font-size-20px: 20px;
+$font-size-30px: 30px;
+$font-size-36px: 36px;
+$font-size-280px: 280px;
+// $font-size-16px: 16px;
+// $font-size-12px: 12px;
+
+// // Forms
+//
+$checkbox-size: 30px;
+$input-padding: 15px;
+
+$input-border-color: $ce-gray-dark;
+$input-btn-border-width: 1px !default; // For form controls and buttons
+
+// Breakpoints
+//
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1300px;

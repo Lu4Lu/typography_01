@@ -1,0 +1,177 @@
+body {
+  counter-reset: section; /* Set a counter named 'section', and its initial value is 0. */
+}
+
+.features {
+  background-color: $ce-white;
+}
+
+.container__features {
+  margin-left: $margin-20;
+  margin-right: $margin-20;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+.features__title {
+  font-weight: 400;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: $margin-35;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: $margin-20;
+    width: 60px;
+    height: 60px;
+    background-color: $ce-btn-green;
+  }
+}
+
+.feature--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature__description {
+  padding-right: 5px;
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    border-bottom: 1px solid $ce-gray;
+  }
+
+  .container__features {
+    margin-left: $margin-30;
+    margin-right: $margin-30;
+    padding-bottom: $margin-55;
+  }
+
+  .features__title {
+    margin-top: 0;
+    font-size: $tablet-h1;
+    margin-bottom: $margin-65;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+
+  .feature {
+    position: relative;
+    display: block;
+    max-width: 50%;
+    min-height: 230px;
+    margin-bottom: $margin-85;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: $margin-35;
+    }
+
+    &::after {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      left: 115px;
+      top: -38px;
+      font-size: $font-size-280px;
+      line-height: 1;
+      font-family: $font-family-sans-serif;
+      color: $ce-gray-lighter;
+      z-index: -1;
+    }
+
+    &--dining,
+    &--clock {
+      margin-bottom: 0;
+    }
+  }
+
+  .feature__description {
+    font-size: $font-size-16px;
+    line-height: 1.5;
+    max-width: 320px;
+    margin-right: $margin-120;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature__description {
+    margin-right: $margin-170;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    border-bottom: none;
+  }
+
+  .container__features {
+    margin-left: $margin-110;
+    margin-right: $margin-110;
+    padding-bottom: $margin-10;
+    margin-bottom: 0;
+  }
+
+  .feature {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: $margin-80;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .features__list {
+    flex-wrap: nowrap;
+    flex-basis: 25%;
+  }
+
+  .feature {
+    margin-bottom: 0;
+  }
+
+  .feature__description {
+    margin-right: 0;
+    max-width: 250px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}

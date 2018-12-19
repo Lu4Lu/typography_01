@@ -1,0 +1,217 @@
+.container__programs {
+  margin-bottom: $margin-30;
+}
+
+.program {
+  position: relative;
+  display: block;
+  background-color: $ce-gray;
+  margin-bottom: $margin-20;
+  padding: $margin-25 $margin-20 $margin-20;
+}
+
+.container__program {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: $margin-25;
+}
+
+.program__image {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: $ce-btn-green;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.program__image--slim::after {
+  margin-left: $margin-10;
+  // width: 70px;
+  // height: 100px;
+  width: 35px;
+  height: 50px;
+  bottom: 5%;
+  background: url("../img/icon-cat-slim.svg") no-repeat center;
+}
+
+.program__image--pro::after {
+  margin-left: -$margin-15;
+  // width: 135px;
+  // height: 60px;
+  width: 65px;
+  height: 30px;
+  left: 15%;
+  bottom: 15%;
+  background: url("../img/icon-cat-pro.svg") no-repeat center;
+}
+
+.program__title {
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: normal;
+  padding-left: $margin-20;
+  margin-bottom: 0;
+}
+
+.program__description {
+  padding-right: 15px;
+  padding-bottom: $margin-25;
+  border-bottom: 1px solid $ce-gray-dark;
+  margin-bottom: $margin-20;
+}
+
+.btn--program {
+  position: relative;
+  text-align: left;
+  color: $ce-text-black;
+  padding-left: 0;
+  font-size: $font-size-16px;
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  // align-self: flex-end;
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: $margin-15;
+    width: 25px;
+    height: 10px;
+    bottom: 25%;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container__programs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program {
+    background-color: $ce-gray;
+    margin-bottom: $margin-20;
+    padding: $margin-80 $margin-315 $margin-55 $margin-55;
+  }
+
+  .program--slim {
+    margin-bottom: $margin-30;
+  }
+
+  .container__program {
+    position: relative;
+  }
+
+  .program__image {
+    position: absolute;
+    rigth: 0;
+    right: -260px;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .program__image--slim::after {
+    margin-left: $margin-35;
+    width: 140px;
+    height: 195px;
+    bottom: 5%;
+    background: url("../img/icon-cat-slim.svg") no-repeat center;
+  }
+
+  .program__image--pro::after {
+    margin-left: -$margin-60;
+    width: 265px;
+    height: 115px;
+    left: 15%;
+    bottom: 15%;
+    background: url("../img/icon-cat-pro.svg") no-repeat center;
+  }
+
+  .program__title {
+    font-size: $font-size-36px;
+    line-height: 1;
+    margin-bottom: $margin-25;
+    padding-left: 0;
+  }
+
+  .program__description {
+    font-size: $font-size-16px;
+    line-height: 1.5;
+    padding-bottom: 0;
+    margin-bottom: $margin-60;
+    border-bottom: none;
+    max-width: 620px;
+  }
+
+  .btn--program {
+    font-size: $font-size-20px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container__programs {
+    flex-direction: row;
+    margin-bottom: $margin-80;
+  }
+
+  .program--slim {
+    margin-right: $margin-80;
+  }
+
+  .program {
+    width: 50%;
+    max-width: 570px;
+    margin-bottom: $margin-20;
+    padding: $margin-50 $margin-55 $margin-60 $margin-50;
+  }
+
+  .program__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: $ce-btn-green;
+    border-radius: 50%;
+  }
+
+  .program__image--slim::after {
+    margin-left: $margin-10;
+    width: 70px;
+    height: 100px;
+    bottom: 5%;
+  }
+
+  .program__image--pro::after {
+    width: 135px;
+    height: 60px;
+    left: 45%;
+    bottom: 15%;
+  }
+
+  .program__title {
+    padding-left: $margin-65;
+    margin-bottom: 0;
+  }
+
+  .program__description {
+    padding-bottom: 0;
+    margin-bottom: $margin-35;
+  }
+}

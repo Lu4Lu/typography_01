@@ -1,0 +1,49 @@
+.btn {
+  padding: 15px 30px 16px 30px;
+  background-color: $ce-btn-green;
+  color: $ce-white;
+  font-size: $button-text;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.25;
+  margin: 0;
+  border-style: none;
+  width: 100%;
+  cursor: pointer;
+
+  &--home-hero {
+    width: 100%;
+    font-size: $font-size-root;
+  }
+
+  &--catalog {
+    width: 100%;
+  }
+
+  &--more {
+    width: 100%;
+    background-color: $ce-gray;
+    color: $ce-text-black;
+  }
+
+  &--example {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: $font-size-16px;
+    color: $ce-text-black;
+  }
+
+  &--request {
+    width: 100%;
+  }
+
+  &--send-request {
+    width: 100%;
+  }
+}
